@@ -1,0 +1,23 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# 本地运行时产物（不入库）
+webapp/positions_live.json
+
+# 个人信息词表：只在本机使用，绝不入库（见 tests/flow_audit.py）
+webapp/.forbidden_terms
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+
+# 个人材料（切勿提交简历原件 / 个人档案）
+*.pdf
+*.docx

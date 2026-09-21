@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>40+ 求职建议 · 简历分析器</title>
+<style>
+  :root{--red:#C00000;--blue:#1F6FB2;--teal:#2E8B8B;--orange:#E65100;--bg:#f5f6f8;--card:#fff;--line:#e3e6ea;}
+  *{box-sizing:border-box;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;}
+  body{margin:0;background:var(--bg);color:#1f2329;line-height:1.6;}
+  .wrap{max-width:960px;margin:0 auto;padding:24px 16px 60px;}
+  .head{border-left:6px solid var(--red);padding:6px 14px;margin-bottom:18px;}
+  .head h1{margin:0;font-size:22px;color:var(--red);}
+  .head p{margin:4px 0 0;color:#666;font-size:13px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px;}
+  label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px;color:#333;}
+  textarea,input[type=text],select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .checks{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;}
+  .checks label{font-weight:400;margin:0;display:flex;align-items:center;gap:6px;}
+  button{background:var(--red);color:#fff;border:0;border-radius:9px;padding:11px 22px;font-size:15px;font-weight:700;cursor:pointer;margin-top:14px;}
+  button:disabled{opacity:.5;}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;}
+  .ok{background:#e8f6ec;color:#1a7f37;} .warn{background:#fff4e0;color:#a15a00;} .no{background:#fde8e8;color:#c0392b;}
+  .rec{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:#fafbfc;}
+  .rec h4{margin:0 0 4px;font-size:15px;}
+  .rec .meta{font-size:12px;color:#666;margin-bottom:6px;}
+  .tag{font-size:11px;padding:1px 7px;border-radius:6px;background:#eef2f6;color:#345;margin-right:5px;}
+  .sec-title{color:var(--blue);font-size:16px;font-weight:800;margin:18px 0 6px;border-bottom:2px solid var(--line);padding-bottom:4px;}
+  .pill{background:var(--teal);color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;}
+  ul{margin:6px 0;padding-left:20px;} li{margin:3px 0;font-size:14px;}
+  .mnc{font-size:13px;margin:4px 0;} .mnc a{color:var(--blue);text-decoration:none;}
+  .hidden{display:none;}
+  .err{color:#c0392b;font-size:13px;}
+  .note{font-size:12px;color:#888;margin-top:8px;}
+  /* 搜索结果列表 */
+  .tbl-wrap{overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:10px;}
+  .list-tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:820px;}
+  .list-tbl th{background:#f0f3f6;color:#345;text-align:left;font-size:12px;font-weight:700;
+    padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  .list-tbl td{padding:9px 10px;border-bottom:1px solid #eef1f4;vertical-align:top;line-height:1.5;word-break:break-word;}
+  .list-tbl tr:last-child td{border-bottom:0;}
+  .list-tbl tr:hover td{background:#fafcfe;}
+  .list-tbl a{color:var(--blue);text-decoration:none;font-weight:600;}
+  .list-tbl a:hover{text-decoration:underline;}
+  .list-tbl .cell-strong{font-weight:700;color:#1f2329;}
+  .list-tbl .cell-sub{font-size:11px;color:#888;margin-top:2px;}
+  .list-tbl .attr .tag{margin:0 4px 3px 0;display:inline-block;}
+  .muted{color:#9aa3ad;font-size:12px;}
+  /* 首屏激励区 */
+  .hero{background:#fffafa;border:1px solid #f0dcd6;border-left:6px solid var(--orange);border-radius:14px;padding:16px 18px;margin-bottom:18px;}
+  .hero-lead{margin:0;font-size:17px;font-weight:800;color:#8f1a00;line-height:1.5;}
+  .hero-body{margin:8px 0 10px;font-size:13.5px;color:#41474e;}
+  .hero-quotes{display:flex;flex-wrap:wrap;gap:8px;}
+  .hero-quotes span{background:#fff;border:1px solid #f0ded8;border-radius:999px;padding:5px 11px;font-size:12px;color:#8a4a2a;}
+  .hero-note{margin:11px 0 0;font-size:12px;color:#8a9198;border-top:1px dashed #eee0db;padding-top:9px;}
+  .enc{background:#fffdf8;border-color:#f0e2cc;}
+  .enc .sec-title{color:var(--orange);border-bottom-color:#f0e2cc;}
+  .enc li{font-size:14px;color:#4a3a28;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1>40+ 求职建议 · 简历分析器</h1>
+    <p>第一性原理：收入不要断 ＞ 专业对口 ＞ 薪资预期 ＞ 城市就近。外企/合资优先，快速就业优先。</p>
+  </div>
+
+  <div class="hero">
+    <p class="hero-lead">你手里那份东西，叫二十年没被裁掉的判断力。</p>
+    <p class="hero-body">年龄在这里不是劣势函数，是筛选函数——它筛掉的是"还能熬夜"，留下的是"能扛结果"。
+      这份工具只做一件事：<b>用最短的时间，帮你找到下一个能开工的入口。</b></p>
+    <div class="hero-quotes">
+      <span>不是你没跟上时代，是招聘系统还不认识二十年经验的形状。</span>
+      <span>先接住现金流，再谈体面。这是战略顺序，不是妥协。</span>
+      <span>降薪换不来安全感；能换来安全感的，是换一种被需要的方式。</span>
+      <span>今天只做成一件事也算数——做完了，今天就不算白过。</span>
+    </div>
+    <p class="hero-note">本工具面向所有 40+ 求职者，<b>不锚定任何特定个人</b>：下方每一条结论，都由你自己上传的简历与填写的信息生成。换一个人用，结论就换成他的。</p>
+  </div>
+
+  <div class="card">
+    <label>① 上传简历（PDF / DOCX / TXT）</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.docx,.txt">
+    <div class="note">或直接在下方粘贴简历文字（任一即可）：</div>
+    <textarea id="resume_text" rows="6" placeholder="粘贴简历全文…"></textarea>
+
+    <label>② 简短问卷（可留空，能自动识别的会自动提取）</label>
+    <div class="grid">
+      <div><label>年龄</label><input type="text" id="age" placeholder="留空也能自动识别"></div>
+      <div><label>所在/意向城市</label><input type="text" id="city" placeholder="如 广州、深圳、佛山"></div>
+      <div><label>行业</label><input type="text" id="industry" placeholder="如 快消、制造、互联网"></div>
+      <div><label>工作年限</label><input type="text" id="years" placeholder="如 15"></div>
+    </div>
+    <label>硬约束（如语种、出差、通勤、健康等客观限制，可留空）</label>
+    <input type="text" id="constraints" placeholder="如 不接受长期出差；英语不作为工作语言">
+    <div class="checks">
+      <label><input type="checkbox" id="salary_flex" value="1"> 薪资可放低（先续现金流）</label>
+      <label><input type="checkbox" id="location_flex" value="1"> 地点可灵活（可远程/外地）</label>
+    </div>
+    <button id="btn" onclick="run()">分析并给建议</button>
+    <div id="err" class="err"></div>
+  </div>
+
+  <div id="result" class="hidden"></div>
+
+  <div class="card">
+    <div class="sec-title">实时搜索岗位</div>
+    <div class="note" style="margin-top:0">直接搜就行，<b>不需要任何配置</b>。搜索能力来自运行本工具的 AI 助手本身。</div>
+    <label>想找什么岗位（关键词 / 一句话）</label>
+    <input type="text" id="sq" placeholder="如：品牌内容 资深；想换城市就把城市写进去，如「上海 品牌经理」">
+    <details style="margin-top:6px">
+      <summary style="cursor:pointer;font-size:12px;color:#888">指定地区（可选，不填就按你上面的输入自动识别）</summary>
+      <input type="text" id="scity" list="citylist" placeholder="如 上海、深圳、成都…（留空＝自动识别）">
+      <datalist id="citylist"></datalist>
+      <div class="note">本工具不预设城市：地区由你自己的输入决定。未收录的城市会给全国通用官方渠道，并提示你怎么用 AI 助手找到本地人社局公告。</div>
+    </details>
+    <label>从哪些渠道找（可多选）</label>
+    <div class="checks">
+      <label><input type="checkbox" class="src" value="人社" checked> 人社/国企官方公告（<b>含报名邮箱</b>）</label>
+      <label><input type="checkbox" class="src" value="外企" checked> 外企官网</label>
+      <label><input type="checkbox" class="src" value="主流平台" checked> 主流招聘平台</label>
+    </div>
+    <button id="sbtn" onclick="runSearch()">立即搜索</button>
+    <div id="serr" class="err"></div>
+    <div id="sresult"></div>
+
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;font-size:12px;color:#888">进阶设置（一般不用动）</summary>
+      <label>搜索方式</label>
+      <select id="sback">
+        <option value="auto">自动（推荐，零配置）</option>
+        <option value="direct">直连招聘网站（无需 key）</option>
+        <option value="llm">我自己的大模型（需自备 key）</option>
+        <option value="search_api">搜索 API（需自备 key）</option>
+      </select>
+      <div class="note" id="back_hint">检测中…</div>
+    </details>
+  </div>
+
+  <div class="card">
+    <div class="sec-title">外企/合资官网 careers 目录（去官网核实在招岗）</div>
+    <div id="mnc_list"></div>
+    <div class="note">本目录仅列公司名与官方招聘链接，不编造具体岗位与薪资；真实岗请官网核实后投递。</div>
+  </div>
+</div>
+
+<script>
+const MNC = {{ mnc | tojson }};
+const SAMPLE_CITY = {{ sample_city | tojson }};
+const CITY_OPTIONS = {{ city_options | tojson }};
+const cl = document.getElementById('citylist');
+if(cl) CITY_OPTIONS.forEach(c=>{ const o=document.createElement('option'); o.value=c; cl.appendChild(o); });
+const mncBox = document.getElementById('mnc_list');
+MNC.forEach(m=>{
+  const d=document.createElement('div'); d.className='mnc';
+  d.innerHTML = `<b>${m.name}</b> <span class="tag">${m.type}</span> <span class="tag">${SAMPLE_CITY}:${m.local?'有':'无'}</span> — <a href="${m.careers_url}" target="_blank" rel="noopener">${m.careers_url}</a>`;
+  mncBox.appendChild(d);
+});
+
+function badge(af){ if(af==='✅')return '<span class="badge ok">年龄友好</span>'; if(af==='⚠️')return '<span class="badge warn">注意</span>'; if(af==='❌')return '<span class="badge no">排除</span>'; return ''; }
+
+async function run(){
+  const btn=document.getElementById('btn'); btn.disabled=true; document.getElementById('err').textContent='';
+  const fd=new FormData();
+  const file=document.getElementById('resume').files[0];
+  if(file) fd.append('resume',file);
+  fd.append('resume_text',document.getElementById('resume_text').value);
+  fd.append('age',document.getElementById('age').value);
+  fd.append('city',document.getElementById('city').value);
+  fd.append('industry',document.getElementById('industry').value);
+  fd.append('years',document.getElementById('years').value);
+  fd.append('constraints',document.getElementById('constraints').value);
+  fd.append('salary_flex',document.getElementById('salary_flex').checked?'1':'0');
+  fd.append('location_flex',document.getElementById('location_flex').checked?'1':'0');
+  try{
+    const r=await fetch('/analyze',{method:'POST',body:fd});
+    const d=await r.json();
+    if(d.error){document.getElementById('err').textContent=d.error; btn.disabled=false; return;}
+    render(d); document.getElementById('result').classList.remove('hidden');
+    document.getElementById('result').scrollIntoView({behavior:'smooth'});
+  }catch(e){ document.getElementById('err').textContent='请求失败：'+e.message; }
+  btn.disabled=false;
+}
+
+function render(d){
+  let h='';
+  if((d.encouragement||[]).length){
+    h+=`<div class="card enc"><div class="sec-title">先读这段 · 在你打开岗位列表之前</div><ul>`;
+    (d.encouragement||[]).forEach(x=>h+=`<li>${x}</li>`);
+    h+=`</ul></div>`;
+  }
+  h+=`<div class="card"><div class="sec-title">① 简历体检</div><ul>`;
+  (d.strengths||[]).forEach(s=>h+=`<li>✅ ${s}</li>`);
+  (d.gaps||[]).forEach(g=>h+=`<li>⚠️ ${g}</li>`);
+  h+=`</ul></div>`;
+
+  h+=`<div class="card"><div class="sec-title">② 求职策略（第一性原理）</div><ul>`;
+  (d.strategy||[]).forEach(s=>h+=`<li>${s}</li>`);
+  h+=`</ul></div>`;
+
+  h+=`<div class="card"><div class="sec-title">③ Top 推荐岗位（外企优先）</div>`;
+  (d.recommendations||[]).forEach(r=>{
+    h+=`<div class="rec"><h4>${r.role} · ${r.company} ${badge(r.age_friendly)}</h4>`;
+    h+=`<div class="meta">${r.city} ｜ ${r.salary} ｜ ${r.foreign?'<span class="tag">外企/合资</span>':''}${r.fast_track?'<span class="tag">快速就业</span>':''}${r.remote_ok?'<span class="tag">可远程/外地</span>':''} ｜ 档位:${r.tier||'-'}</div>`;
+    h+=`<div class="meta">匹配理由：${r.reason}</div>`;
+    h+=`<div class="meta">来源：${r.source||'-'}</div></div>`;
+  });
+  if(d.data_note) h+=`<div class="note">来源说明：${esc(d.data_note)}</div>`;
+  h+=`</div>`;
+
+  h+=`<div class="card"><div class="sec-title">④ 大厂 HR 2026 最新需求 · 能力对标</div><ul>`;
+  (d.hr_demands||[]).forEach(x=>h+=`<li>${x}</li>`);
+  h+=`</ul></div>`;
+
+  if(d.llm_advice){ h+=`<div class="card"><div class="sec-title">⑤ 大厂 HR 模拟建议（DeepSeek）</div><p style="white-space:pre-wrap;font-size:14px;">${d.llm_advice}</p></div>`; }
+  else { h+=`<div class="card"><div class="sec-title">⑤ 今日行动清单</div><ul>`+(d.actions||[]).map(a=>`<li>${a}</li>`).join('')+`</ul><div class="note">设置 DEEPSEEK_API_KEY 可解锁"大厂 HR 模拟建议"。当前为规则引擎输出。</div></div>`; }
+
+  document.getElementById('result').innerHTML=h;
+}
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+/* 状态徽标：在招 / 即将开始报名 / 已截止 */
+function statusBadge(st){
+  if(st==='在招') return '<span class="badge ok">在招</span>';
+  if(st==='即将开始报名') return '<span class="badge warn">即将开始报名</span>';
+  if(st==='已截止') return '<span class="badge no">已截止</span>';
+  return '';
+}
+
+/* 投递方式：有邮箱给 mailto；没邮箱就如实给「实际怎么投」，绝不编造 */
+function applyCell(p){
+  const em=(p.email||'').trim();
+  if(em) return `<a href="mailto:${esc(em)}">${esc(em)}</a>`;
+  const am=(p.apply_method||'').trim();
+  if(am) return `<span class="muted">${esc(am)}</span>`;
+  const hint={
+    '主流平台':'平台不公开邮箱<br><small>需站内直投</small>',
+    '外企':'官网系统投递<br><small>无公开邮箱</small>',
+    '人社':'公告内附报名方式<br><small>点直链查看</small>',
+  }[p.source_type] || '未公开<br><small>走直链投递</small>';
+  return `<span class="muted">${hint}</span>`;
+}
+
+function renderList(rows){
+  if(!rows.length) return '';
+  let h=`<div class="tbl-wrap"><table class="list-tbl">
+    <thead><tr>
+      <th style="width:17%">公司名字</th>
+      <th style="width:18%">公司属性</th>
+      <th style="width:8%">地区</th>
+      <th style="width:19%">职位名称</th>
+      <th style="width:11%">直链网址</th>
+      <th style="width:27%">投简历的邮箱 / 报名方式</th>
+    </tr></thead><tbody>`;
+  rows.forEach(p=>{
+    const tags=(p.company_type||'').split('·').map(s=>s.trim()).filter(Boolean);
+    const sub=[p.recruiter?`招聘人 ${p.recruiter}${p.recruiter_title?'（'+p.recruiter_title+'）':''}`:'',
+               `<span class="tag">${esc(p.source_type||'其他')}</span>`].filter(Boolean).join(' · ');
+    const meta=[p.salary&&p.salary!=='待核实'?esc(p.salary):'', p.exp?esc(p.exp):'', p.edu?esc(p.edu):''].filter(Boolean).join(' · ');
+    h+=`<tr>
+      <td>${badge(p.age_friendly)}${statusBadge(p.status)}<div class="cell-strong">${esc(p.company)}</div><div class="cell-sub">${sub}</div></td>
+      <td><div class="attr">${tags.length?tags.map(t=>`<span class="tag">${esc(t)}</span>`).join(''):'<span class="muted">未公开</span>'}</div></td>
+      <td>${esc(p.city||'')||'<span class="muted">-</span>'}</td>
+      <td><div class="cell-strong">${esc(p.role)}</div>${meta?`<div class="cell-sub">${meta}</div>`:''}</td>
+      <td>${p.link?`<a href="${esc(p.link)}" target="_blank" rel="noopener">打开 →</a>`:'<span class="muted">-</span>'}</td>
+      <td>${applyCell(p)}</td>
+    </tr>`;
+  });
+  h+=`</tbody></table></div>`;
+  return h;
+}
+
+/* 渠道入口：不是岗位，是"进站搜索的入口"，单独分区避免混淆 */
+function renderChannels(rows){
+  if(!rows||!rows.length) return '';
+  let h=`<details style="margin-top:14px"><summary style="cursor:pointer;font-size:13px;color:#345;font-weight:600">
+    📌 另有 ${rows.length} 个「渠道入口」（不是岗位，是可直接进站找岗的官方/官网地址）</summary>
+    <div class="tbl-wrap"><table class="list-tbl">
+    <thead><tr><th style="width:26%">机构 / 公司</th><th style="width:24%">属性</th><th style="width:36%">入口</th><th style="width:14%">说明</th></tr></thead><tbody>`;
+  rows.forEach(c=>{
+    h+=`<tr><td class="cell-strong">${esc(c.company)}</td>
+      <td><span class="tag">${esc(c.company_type||'')}</span></td>
+      <td>${c.link?`<a href="${esc(c.link)}" target="_blank" rel="noopener">${esc(c.link)}</a>`:'-'}</td>
+      <td class="muted">${esc((c.duty||'').slice(0,40))}</td></tr>`;
+  });
+  h+=`</tbody></table></div></details>`;
+  return h;
+}
+
+fetch('/search/backends').then(r=>r.json()).then(b=>{
+  const t=[];
+  t.push(b.agent?'✅ 已载入最新搜索结果':'ℹ️ 未载入额外结果（用直连招聘网站即可）');
+  t.push('✅ 直连招聘网站：始终可用，无需配置');
+  if(b.llm) t.push('✅ 已配置你自己的大模型');
+  if(b.search_api) t.push('✅ 已配置搜索 API');
+  if(!b.llm && !b.search_api) t.push('（无需配置任何 key，正常搜索不受影响）');
+  document.getElementById('back_hint').innerHTML=t.join(' ｜ ');
+}).catch(()=>{ document.getElementById('back_hint').textContent='检测失败（请确认服务已启动）'; });
+
+async function runSearch(){
+  const btn=document.getElementById('sbtn'); btn.disabled=true;
+  const err=document.getElementById('serr'); err.textContent='';
+  const q=document.getElementById('sq').value.trim();
+  if(!q){ err.textContent='请先填写想找的岗位。'; btn.disabled=false; return; }
+  const srcs=[...document.querySelectorAll('.src:checked')].map(x=>x.value);
+  const backendEl=document.getElementById('sback');
+  const backend=backendEl?backendEl.value:'auto';
+  const cityEl=document.getElementById('scity');
+  const city=cityEl?cityEl.value.trim():'';
+  const box=document.getElementById('sresult'); box.innerHTML='<div class="note">搜索中，请稍候…</div>';
+  try{
+    const r=await fetch(`/search?q=${encodeURIComponent(q)}&sources=${encodeURIComponent(srcs.join(','))}&backend=${backend}${city?`&city=${encodeURIComponent(city)}`:''}`);
+    const d=await r.json();
+    if(d.error){ err.textContent=d.error; box.innerHTML=''; btn.disabled=false; return; }
+    const rows=d.results||[];
+    const withMail=d.email_count||0;
+
+    // ① 检索口径说明：让用户确认"系统真的按我搜的词、按我指定的地区在找"
+    let h=`<div class="note" style="margin-top:12px">按 <b>「${esc(q)}」</b> 检索，地区 <b>${esc(d.city||'')}</b>，共 <b>${d.count}</b> 条岗位`;
+    if(d.matched_terms&&d.matched_terms.length) h+=` ｜ 命中词：${d.matched_terms.slice(0,8).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}`;
+    h+=`</div>`;
+    if(d.city_hint) h+=`<div class="note" style="color:#a15a00">${esc(d.city_hint)}</div>`;
+
+    // ② 无相关结果时，先说清楚原因，再给出路（不甩空列表）
+    if(d.count===0){
+      h+=`<div class="note" style="color:#a15a00">这一轮没有匹配到与「${esc(q)}」相关的岗位。
+        ${(d.channels||[]).length?`已为你保留 ${d.channel_count} 个官方渠道入口（见下方折叠区），可进去直接搜。`:''}
+        也可以换个说法再试（如"品牌""内容运营""培训讲师"），或让 AI 助手专程去外企官网帮你搜一批。</div>`;
+    } else if(!d.query_applied){
+      h+=`<div class="note" style="color:#a15a00">提示：本渠道暂无与「${esc(q)}」精确匹配的岗位，以下为按年龄友好度排序的其它机会，供参考。</div>`;
+    }
+
+    h+=renderList(rows);
+
+    // ③ 邮箱情况如实说明（这是用户最关心的缺口）
+    if(rows.length){
+      if(withMail>0){
+        h+=`<div class="note">共 <b>${withMail}</b> 条有公开投递邮箱，已可直接点开投递；其余请按「报名方式」列提示投递。</div>`;
+      }else{
+        h+=`<div class="note">本轮 ${d.count} 条岗位<b>均无公开邮箱</b>——这是渠道特性，不是漏抓：
+          招聘平台（猎聘等）与多数外企走站内/官网系统，本就不公开邮箱。</div>`;
+      }
+      h+=`<div class="note">💡 想拿到带邮箱的岗位，请勾选「人社/国企官方公告」渠道——公告里普遍附报名邮箱或报名系统（本轮已收录含邮箱公告岗）。</div>`;
+    }
+
+    // ④ 渠道入口单独分区
+    h+=renderChannels(d.channels||[]);
+    box.innerHTML=h;
+  }catch(e){ err.textContent='搜索失败：'+e.message; box.innerHTML=''; }
+  btn.disabled=false;
+}
+</script>
+</body>
+</html>
